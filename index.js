@@ -232,7 +232,7 @@ Use getArtistByIndex to do the following:
 
 function getArtistByIndex(artists, index) {
   let artist = artists[index];
-  return `the artist at index ${artist.id} is ${artist.name}`
+  return `the artist at index ${artist.id} is ${artist.name}`;
 }
 
 
@@ -245,8 +245,14 @@ Use listOfNames to do the following:
 🌟 EXAMPLE of return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
 */
 
-function listOfNames(/*Your Code Here*/) {
-  /*Your Code Here*/
+function listOfNames(artists) {
+  let artistsCopy = [];
+
+  for (let i =0; i < artists.length; i++) {
+    artistsCopy.push(artists[i].name);
+  }
+
+  return artistsCopy;
 }
 
 
